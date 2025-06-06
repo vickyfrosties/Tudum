@@ -1,0 +1,50 @@
+@use "/src/variables";
+
+.menu {
+  background-color: variables.$navbar-color;
+  margin: auto;
+  margin-top: 1em;
+  width: 80vmin;
+  max-width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 1ch;
+  border-radius: 0.8em;
+  color: variables.$text-color;
+
+  &__logo,
+  &__item {
+    padding: 0;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    min-width: 50vmin;
+    justify-content: space-around;
+    align-items: center;
+
+    > li {
+      font-size: variables.$textSize;
+    }
+
+    :hover {
+      cursor: pointer;
+    }
+
+    p {
+      font-size: variables.$textSize;
+    }
+  }
+}
