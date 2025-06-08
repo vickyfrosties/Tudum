@@ -1,0 +1,16 @@
+@use "/src/variables";
+
+.btn-add {
+  background-color: variables.$button-color;
+  width: 8rem;
+  height: 3rem;
+  padding: 0.3em;
+  color: variables.$text-color;
+  font-size: variables.$textSize;
+  border-radius: 0.5em;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
