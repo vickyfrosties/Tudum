@@ -1,9 +1,14 @@
 import style from "./AddBtn.module.scss";
 
 const AddBtn = () => {
+  const handleClick = (e: any) => {
+    e.preventDefault();
+  };
   return (
     <>
-      <button className={style["btn-add"]}>New task</button>
+      <button onClick={handleClick} className={style["btn-add"]}>
+        New task
+      </button>
     </>
   );
 };

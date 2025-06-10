@@ -1,0 +1,33 @@
+@use "/src/variables";
+
+.taskForm {
+  background-color: variables.$navbar-color;
+  border-radius: 1em;
+  padding: 2em;
+  min-width: 50vw;
+  max-width: 60vw;
+  height: 40dvh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: variables.$text-color;
+
+  > input {
+    height: 3em;
+    padding: 1em;
+  }
+
+  .formButton {
+    padding: 0;
+    width: 15%;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: variables.$button-color;
+      color: variables.$text-color;
+    }
+  }
+}
